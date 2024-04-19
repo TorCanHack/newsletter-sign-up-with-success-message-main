@@ -1,0 +1,170 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+body main {
+  width: min(95%, 375px);
+  height: 842px;
+}
+body main .signup-form .hero-mobile {
+  height: 284px;
+}
+body main .signup-form .hero-desktop {
+  display: none;
+}
+body main .signup-form form h1 {
+  font-size: 2.5rem;
+  color: hsl(235, 18%, 26%);
+  margin-left: 1rem;
+}
+body main .signup-form form ul {
+  color: hsl(235, 18%, 26%);
+  text-align: left;
+}
+body main .signup-form form ul P {
+  position: relative;
+  right: 1.5rem;
+}
+body main .signup-form form ul li {
+  list-style: none;
+  background: url("assets/images/icon-list.svg");
+  background-repeat: no-repeat;
+  background-size: 19px;
+  padding-left: 2.5rem;
+  position: relative;
+  right: 1.5rem;
+  margin: 1rem 0;
+}
+body main .signup-form form label {
+  font-size: 0.75rem;
+  color: hsl(235, 18%, 26%);
+  padding: 0 1.5rem;
+}
+body main .signup-form form input {
+  width: 327px;
+  height: 56px;
+  border-radius: 1rem;
+  border: 1px solid hsl(231, 7%, 60%);
+  margin: 1rem 1.5rem;
+}
+body main .signup-form form .errorMessage {
+  font-size: 0.75rem;
+  position: relative;
+  bottom: 10.5rem;
+  left: 15rem;
+  color: red;
+}
+body main .signup-form form button {
+  width: 327px;
+  height: 56px;
+  border-radius: 1rem;
+  border: 0;
+  background-color: hsl(235, 18%, 26%);
+  color: hsl(0, 0%, 100%);
+  margin: 0 1.5rem;
+}
+body main .subscribe-message {
+  display: none;
+  margin-top: 10rem;
+  padding: 0 1.5rem;
+}
+body main .subscribe-message h2 {
+  font-size: 2.5rem;
+  color: hsl(235, 18%, 26%);
+}
+body main .subscribe-message p {
+  color: hsl(235, 18%, 26%);
+}
+body main .subscribe-message button {
+  width: 327px;
+  height: 56px;
+  border-radius: 1rem;
+  border: 0;
+  background-color: hsl(235, 18%, 26%);
+  color: white;
+  margin-top: 15rem;
+}
+@media screen and (min-width: 1440px) {
+  body main {
+    width: 1440px;
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  body main .signup-form {
+    width: 928px;
+    height: 641px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 528px 400px;
+    justify-items: center;
+    border-radius: 2rem;
+  }
+  body main .signup-form .hero-mobile {
+    display: none;
+  }
+  body main .signup-form .hero-desktop {
+    display: inline-block;
+    height: 593px;
+    grid-column: 2/2;
+    width: 400px;
+    position: relative;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+  body main .signup-form form {
+    width: 376px;
+    height: 446px;
+    position: relative;
+    bottom: 33rem;
+  }
+  body main .signup-form form h1 {
+    font-size: 3.5rem;
+  }
+  body main .signup-form form ul li {
+    width: 376px;
+  }
+  body main .signup-form form input {
+    width: 376px;
+  }
+  body main .signup-form form .list-text {
+    width: 360px;
+  }
+  body main .signup-form form button {
+    width: 376px;
+  }
+  body main .subscribe-message {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 504px;
+    height: 520px;
+    border-radius: 2rem;
+  }
+  body main .subscribe-message h2 {
+    font-size: 3.5rem;
+    border: 1px solid;
+    width: 376px;
+  }
+  body main .subscribe-message p {
+    margin-top: -1rem;
+    width: 376px;
+  }
+  body main .subscribe-message img {
+    margin-top: 3rem;
+    position: relative;
+    right: 10rem;
+  }
+  body main .subscribe-message button {
+    width: 376px;
+    margin-top: 1rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

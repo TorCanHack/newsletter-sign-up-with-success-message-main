@@ -1,0 +1,262 @@
+$tomato: hsl(4, 100%, 67%);
+$darkSlateGrey: hsl(235, 18%, 26%);
+$grey: hsl(231, 7%, 60%);
+$white: hsl(0, 0%, 100%);
+
+@mixin center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+
+    @include center-content;
+    font-family: "Roboto", sans-serif;
+    
+
+    main {
+        width: min(95%, 375px);
+        height: 842px;
+
+
+        .signup-form {
+            
+            
+
+            .hero-mobile {
+
+                height: 284px;
+            }
+
+            .hero-desktop {
+                display: none;
+            }
+
+            form {
+                
+    
+                h1 {
+                    font-size: 2.5rem;
+                    color: $darkSlateGrey;
+                    margin-left: 1rem;
+                }
+                ul {
+                    color: $darkSlateGrey;
+                    text-align: left;
+    
+                    P {
+                        position: relative;
+                        right: 1.5rem;
+                    }
+                    
+    
+                    li {
+    
+                        list-style: none;
+                        background: url("assets/images/icon-list.svg");
+                        background-repeat: no-repeat;
+                        background-size: 19px;
+                        padding-left: 2.5rem;
+                        position: relative;
+                        right: 1.5rem;
+                        margin: 1rem 0;
+                        
+                    }
+
+            
+                }
+
+                label {
+                    font-size: 0.75rem;
+                    color: $darkSlateGrey;
+                    padding: 0 1.5rem;
+                }
+
+                input {
+                    width: 327px;
+                    height: 56px;
+                    border-radius: 1rem;
+                    border: 1px solid $grey;
+                    margin: 1rem 1.5rem;
+                    
+                }
+
+                .errorMessage {
+                    font-size: 0.75rem;
+                    position: relative;
+                    bottom: 10.5rem;
+                    left: 15rem;
+                    color: red;
+                }
+
+                button {
+
+                    width: 327px;
+                    height: 56px;
+                    border-radius: 1rem;
+                    border: 0;
+                    background-color: $darkSlateGrey;
+                    color: $white;
+                    margin: 0 1.5rem;
+                }
+            }
+        }
+
+        .subscribe-message {
+
+            display: none;
+            margin-top: 10rem;
+            padding: 0 1.5rem;
+            
+            
+
+            h2 {
+                font-size: 2.5rem;
+                color: $darkSlateGrey;
+            }
+            p {
+                color: $darkSlateGrey;
+            }
+
+            button {
+                width: 327px;
+                height: 56px;
+                border-radius: 1rem;
+                border: 0;
+                background-color: $darkSlateGrey;
+                color: white;
+                margin-top: 15rem;
+            }
+        }
+
+
+        
+   
+    }
+
+    @media screen and (min-width: 1440px) {
+
+        main {
+
+            width: 1440px;
+            background-color: $darkSlateGrey;
+            @include center-content;
+            overflow: hidden;
+
+            .signup-form {
+                
+                width: 928px;
+                height: 641px;
+                background-color: white;
+                display: grid;
+                grid-template-columns: 528px 400px;
+                justify-items: center;
+                border-radius: 2rem;
+
+                .hero-mobile{
+                    display: none;
+                }
+
+                .hero-desktop {
+
+
+                    display: inline-block;
+                    height: 593px;
+                    grid-column: 2/2;
+                    width: 400px;
+                    position: relative;
+                    top: 1.5rem;
+                    right: 1.5rem;
+                }
+
+                form {
+
+                    width: 376px;
+                    height: 446px;
+                    position: relative;
+                    bottom: 33rem;
+                    
+                    
+                    h1 {
+                        font-size: 3.5rem;
+                    }
+
+                    ul {
+
+                        
+
+                        li {
+                            
+                            width: 376px;
+                        }
+
+                    }
+
+                    input {
+                        width: 376px;
+                    
+                    }
+
+                    .list-text {
+                        width: 360px;
+                        
+                    }
+
+                    button {
+
+                        width: 376px;
+
+                    }
+
+                }
+
+            }
+
+            .subscribe-message {
+
+                display: none;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                width: 504px;
+                height: 520px;
+                border-radius: 2rem;
+                
+                
+                
+                
+
+                h2 {
+                    font-size: 3.5rem;
+                    border: 1px solid;
+                    width: 376px;
+
+                }
+
+                p {
+                    margin-top: -1rem;
+                    width: 376px;
+                }
+
+                img {
+                    margin-top: 3rem;
+                    position: relative;
+                    right: 10rem;
+                }
+
+                button {
+                    width: 376px;
+                    margin-top: 1rem;
+                }
+            } 
+            
+            
+
+            
+        }
+        
+    }
+}

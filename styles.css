@@ -20,13 +20,13 @@ body main .signup-form form h1 {
   color: hsl(235, 18%, 26%);
   margin-left: 1rem;
 }
+body main .signup-form form .list-text {
+  margin-left: 1rem;
+  color: hsl(235, 18%, 26%);
+}
 body main .signup-form form ul {
   color: hsl(235, 18%, 26%);
   text-align: left;
-}
-body main .signup-form form ul P {
-  position: relative;
-  right: 1.5rem;
 }
 body main .signup-form form ul li {
   list-style: none;
@@ -90,6 +90,7 @@ body main .subscribe-message button {
 @media screen and (min-width: 1440px) {
   body main {
     width: 1440px;
+    height: 1080px;
     background-color: hsl(235, 18%, 26%);
     display: flex;
     flex-direction: column;
@@ -151,7 +152,6 @@ body main .subscribe-message button {
   }
   body main .subscribe-message h2 {
     font-size: 3.5rem;
-    border: 1px solid;
     width: 376px;
   }
   body main .subscribe-message p {

@@ -41,15 +41,21 @@ body {
                     font-size: 2.5rem;
                     color: $darkSlateGrey;
                     margin-left: 1rem;
+
+
                 }
+
+                .list-text {
+                    
+                    margin-left: 1rem;
+                    color: $darkSlateGrey;
+                }
+
                 ul {
                     color: $darkSlateGrey;
                     text-align: left;
     
-                    P {
-                        position: relative;
-                        right: 1.5rem;
-                    }
+
                     
     
                     li {
@@ -141,9 +147,11 @@ body {
         main {
 
             width: 1440px;
+            height: 1080px;
             background-color: $darkSlateGrey;
             @include center-content;
             overflow: hidden;
+           
 
             .signup-form {
                 
@@ -154,6 +162,7 @@ body {
                 grid-template-columns: 528px 400px;
                 justify-items: center;
                 border-radius: 2rem;
+              
 
                 .hero-mobile{
                     display: none;
@@ -231,7 +240,6 @@ body {
 
                 h2 {
                     font-size: 3.5rem;
-                    border: 1px solid;
                     width: 376px;
 
                 }

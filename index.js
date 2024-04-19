@@ -10,10 +10,14 @@ document.querySelector("form").addEventListener("submit", function(event){
 
     if (email === ""){
         errorMessage.textContent = "Please, provide email";
+        document.querySelector("input").style.border = "1px solid #E34234"
+        document.querySelector("input").style.backgroundColor = "#FF6155"
         event.preventDefault();
 
     } else if ( !validateEmail(email)){
         errorMessage.textContent = "invaild email";
+        document.querySelector("input").style.border = "1px solid #E34234"
+        document.querySelector("input").style.backgroundColor = "#FF6155"
         event.preventDefault();
     } else {
         document.querySelector(".signup-form").style.display = "none"

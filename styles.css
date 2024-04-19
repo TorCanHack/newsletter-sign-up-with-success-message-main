@@ -140,6 +140,10 @@ body main .subscribe-message button {
   body main .signup-form form button {
     width: 376px;
   }
+  body main .signup-form form button:hover {
+    background-color: #E34234;
+    cursor: pointer;
+  }
   body main .subscribe-message {
     display: none;
     flex-direction: column;
@@ -166,5 +170,9 @@ body main .subscribe-message button {
   body main .subscribe-message button {
     width: 376px;
     margin-top: 1rem;
+  }
+  body main .subscribe-message button:hover {
+    background-color: #FF6155;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=styles.css.map */

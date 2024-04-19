@@ -219,6 +219,11 @@ body {
 
                     }
 
+                    button:hover {
+                        background-color: #E34234;
+                        cursor: pointer;
+                    }
+
                 }
 
             }
@@ -258,6 +263,11 @@ body {
                 button {
                     width: 376px;
                     margin-top: 1rem;
+                }
+
+                button:hover {
+                    background-color: #FF6155;
+                    cursor: pointer;
                 }
             } 
             
